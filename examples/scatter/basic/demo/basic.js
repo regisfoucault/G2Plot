@@ -39,7 +39,11 @@ const scatterPlot = new Scatter(document.getElementById('container'), {
   data: data,
   xField: 'x',
   yField: 'y',
-  pointSize: 5,
+  pointSize: 6,
+  pointStyle: {
+    stroke: '#777777',
+    lineWidth: 1,
+  },
   trendline: {
     type: 'quad',
     showConfidence: true,
