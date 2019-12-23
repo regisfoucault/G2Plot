@@ -245,7 +245,7 @@ export default class SpiderLabel {
     let maxY = 0;
     let minY = Number.MIN_VALUE;
     let maxLabelWidth = 0;
-    const boxes = half.map((label) => {
+    const boxes: any[] = half.map((label) => {
       const labelY = label.y;
       if (labelY > maxY) {
         maxY = labelY;
